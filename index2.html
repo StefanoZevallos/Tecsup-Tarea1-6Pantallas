@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0; 
+            }
+
+        html{
+        font-size: 65.5%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }       
+
+        .container {
+            /* border: 1px solid black; */
+            height: 100vh;
+        }
+
+        .cajas-container {
+            border: 1px solid black;
+        }
+
+        .caja-header{
+            height: 5vh;
+            justify-content: end;
+            position: relative;
+        }
+
+        .menu{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            /* position: absolute; */
+        }
+
+        .menu p{ 
+            margin-left: 1rem;
+            background-color: lightgray;
+        }
+
+
+        .logo{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            position: absolute;
+            right: 16rem;
+        }
+
+        .logo p{ 
+            margin-left: 1rem;;
+        }
+
+
+        .loginycart{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            position: absolute;
+            right: 0;
+        }
+
+        .loginycart p{
+            margin-right: 1rem;
+            background-color: lightgray;
+        }
+
+        .caja1 {
+            height: 28vh;
+            justify-content: center;
+            /* align-items: center; */
+            display: flex;
+        }
+
+        .caja1-texto-container {
+            padding-top: 3.5rem;
+        }
+
+        .caja1 h1:nth-child(1) {
+            font-size: 4rem;
+            font-style: italic;
+        }
+
+        .caja1 h1:nth-child(2) {
+            font-size: 4rem;
+            font-style: italic;
+        }
+
+        .caja1 h1:nth-child(3) {
+            font-size: 4rem;
+            font-style: italic;
+        }
+    /* ------------------------------------------------- */
+        .caja2 {
+            height: 33vh;
+            display: flex; 
+            justify-content: center;
+        }
+
+        .formulario fieldset:nth-child(1) {
+            background-color: lightgray;
+            height: 9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            width: 35rem;  
+            border: 0;
+            }
+
+        .input-container1 label{
+        font-size: 1.8rem;
+        margin-right: 4.2rem;
+        
+        } 
+        
+        .input-container1 input {
+            height: 4.2rem;
+            border: 0; ;
+        }
+
+        .formulario fieldset:nth-child(2) {
+            margin-top: 3rem;
+            margin-bottom: 6rem;
+            background-color: lightgray;
+            height: 9rem;
+            width: 35rem;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+        }
+
+        .input-container2 label{
+        font-size: 1.8rem;
+        margin-right: 2rem;
+        } 
+        
+        .input-container2 input {
+            height: 4.2rem;
+            border: 0;
+        }
+        /* -------------------------------------------------- */
+        .caja3 {
+            height: 34vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .caja3 p:nth-child(1) {
+            background-color: lightgray;
+            margin-top: 1rem;
+            margin-bottom: 5rem;
+            font-size: 2rem;
+        }
+
+        .caja3 p:nth-child(2) {
+            font-size: 2.1rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="caja-header">
+
+        <div class="menu">
+            <p> menu </p>
+        </div>
+
+        <div class="logo">
+            <p> logo </p>
+        </div>
+        
+        <div class="loginycart">
+            <p> cart</p>
+        </div>
+
+
+    </div>
+    <div class="cajas-container">
+    <div class="caja1"> 
+        <div class="caja1-texto-container">
+        <h1> Bienvenido a </h1>
+        <h1> Pequeño </h1>
+        <h1> Limon </h1>
+        </div>
+    </div>
+
+    <div class="caja2"> 
+        <form action="backend.com" class="formulario">
+            <fieldset >
+                <div class="input-container1">
+                <label for="nombres"> Usuario </label>
+                <input type="text" name="nombres" id="nombres">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="input-container2">
+                <label for="nombres"> Contraseña </label>
+                <input type="password" name="nombres" id="nombres">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="caja3">
+        <p> LOGIN</p>
+        <p> Sin cuenta?, create una aquí</p>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0; 
+            }
+
+        html{
+        font-size: 65.5%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }       
+
+        .container {
+            /* border: 1px solid black; */
+            height: 100vh;
+        }
+        .caja-header{
+            height: 5vh;
+            justify-content: end;
+            position: relative;
+            /* border: 1px solid black; */
+        }
+
+        .menu{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            /* position: absolute; */
+        }
+
+        .menu p{ 
+            margin-left: 1rem;
+            background-color: lightgray;
+        }
+
+
+        .logo{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            position: absolute;
+            right: 16rem;
+        }
+
+        .logo p{ 
+            margin-left: 1rem;;
+        }
+
+
+        .loginycart{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            position: absolute;
+            right: 0;
+        }
+
+        .loginycart p{
+            margin-right: 1rem;
+            background-color: lightgray;
+        }
+        /* ------------ */
+        .caja1 {
+            height: 15vh;
+        }
+
+        .p1 {
+            font-size: 3rem;
+            margin-top: 2.5rem;
+            margin-bottom: 4rem;
+            margin-left: 1rem;
+        }
+
+        .p2 {
+            font-size: 2rem;
+            margin-bottom: 6rem;
+            margin-left: 1rem;
+        }
+
+        .p3 {
+            font-size: 1.8rem;
+            margin-left: 1rem;
+            background-color: lightgray;
+            display: inline-block;
+        }
+        /* ------------------------------------- */
+
+        .caja2-container{
+            display: flex;
+            align-items: center;
+            justify-self: unset;
+            justify-content: center;
+        }
+
+        .caja2 {
+            border: 1px solid black;
+            height: 40vh;
+            width: 330px;
+            display: grid;
+            grid-template-columns: 120px 120px;
+            gap: 55px;
+            row-gap: 20px;
+            justify-content: center;
+            font-size: 4rem;
+            font-style: italic;
+        }
+
+        .cl1 {
+            margin-top: 20px;
+            border: 1px solid black;
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .cl2 {
+            margin-top: 20px;
+            border: 1px solid black  ;
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .cl3 {
+            border: 1px solid black;
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .cl4 {
+            border: 1px solid black;
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+/* ------------------------------------------------------ */
+
+        .caja3 {
+            border: 1px solid black;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="caja-header">
+
+        <div class="menu">
+            <p> menu </p>
+        </div>
+
+        <div class="logo">
+            <p> logo </p>
+        </div>
+        
+        <div class="loginycart">
+            <p> login</p>
+            <p> cart</p>
+        </div>
+
+
+    </div>
+    <div class="caja1"> 
+        <p class="c1 p1"> Reservar una mesa </p>
+    </div>
+    <div class="caja2-container">
+    <div class="caja2">
+        <div class="cl1"> 
+            <p> T1</p> 
+        </div>
+        <div class="cl2"> 
+            <p> T2</p> 
+        </div>
+        <div class="cl3"> 
+            <p> T3</p>  
+        </div>
+        <div class="cl4"> 
+            <p> T4</p>  
+        </div>    
+    </div>
+    </div>
+    <div class="caja3">
+
+        <div class="cajagrande-ploma-1"> </div>
+        <div class="cajagrande-ploma-2"> </div>
+        <div class="cajagrande-ploma-3"> </div>
+
+    </div>
+    </div>
+</body>
+</html>

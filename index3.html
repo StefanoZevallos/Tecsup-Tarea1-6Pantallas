@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0; 
+            }
+
+        html{
+        font-size: 65.5%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }       
+
+        .container {
+            height: 100vh;
+        }
+
+
+        .caja-header{
+            height: 5vh;
+            justify-content: end;
+            position: relative;
+        }
+
+        .back{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            /* position: absolute; */
+        }
+
+        .back p{ 
+            margin-left: 1rem;
+            background-color: lightgray;
+        }
+
+        .logo{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            position: absolute;
+            right: 20rem;
+        }
+
+        .caja1 {
+            height: 10vh;
+            justify-content: center;
+            display: flex;
+            margin-bottom: 2.6rem;
+        }
+
+        .caja1-texto-container {
+            padding-top: 1.5rem;
+            font-size: 2rem;
+            font-style: italic;
+        }
+
+    /* ------------------------------------------------- */
+
+        .caja2 {
+            height: 65vh;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4.5rem;
+        }
+
+        .formulario fieldset {
+            background-color: lightgray;
+            height: 6.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            width: 42rem;  
+            border: 0;
+            margin-bottom:1rem ;
+            margin-top: 1rem;
+            }
+
+        .formulario fieldset div label{
+            font-size: 1.8rem;
+            margin-right: 5rem;
+        }
+
+        .formulario fieldset div input {
+            height: 3.5rem;
+            border: 0;
+        }
+
+    /* -------------------------------------------------- */
+
+        .ok-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+       .ok { 
+            background-color: lightgray;
+            height: 3.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            width: 39.8rem;  
+            border: 0;
+            margin-top: 2rem;
+       }
+
+       .ok p {
+        font-size: 3.4rem;
+        object-fit: cover;
+        font-style: italic;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="caja-header">
+        <div class="back">
+            <p> Back </p>
+        </div>
+        
+        <div class="logo">
+            <p> Logo</p>
+        </div>
+    </div>
+
+    <div class="cajas-container">
+    <div class="caja1"> 
+        <div class="caja1-texto-container">
+        <h1> Registro </h1>
+        </div>
+    </div>
+
+    <div class="caja2"> 
+        <form action="backend.com" class="formulario">
+            <fieldset >
+                <div class="input-container1">
+                <label for="nombres"> Nombres </label>
+                <input type="text" name="nombres" id="nombres">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="input-container2">
+                <label for="nombres"> Apellidos </label>
+                <input type="password" name="nombres" id="nombres">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="input-container2">
+                <label for="nombres"> usuario </label>
+                <input type="password" name="nombres" id="nombres">
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <div class="input-container2">
+                <label for="nombres"> Telefono </label>
+                <input type="text" name="nombres" id="nombres">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="input-container2">
+                <label for="nombres"> Correo </label>
+                <input type="text" name="nombres" id="nombres">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="input-container2">
+                <label for="nombres"> Contraseña </label>
+                <input type="text" name="nombres" id="nombres">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="input-container2">
+                <label for="nombres"> Contraseña </label>
+                <input type="text" name="nombres" id="nombres">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="ok-container">
+    <fieldset class="ok">
+      <p> OK</p>
+    </fieldset>
+    </div>
+    </div>
+</body>
+</html>
