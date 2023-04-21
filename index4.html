@@ -21,11 +21,11 @@
             /* border: 1px solid black; */
             height: 100vh;
         }
+
         .caja-header{
             height: 5vh;
             justify-content: end;
             position: relative;
-            /* border: 1px solid black; */
         }
 
         .menu{
@@ -69,30 +69,21 @@
             margin-right: 1rem;
             background-color: lightgray;
         }
-        /* ------------ */
+        /* -------------------------------- */
+        
         .caja1 {
             height: 15vh;
+            display: flex;
+            justify-content: center;
+            font-style: italic;
         }
 
         .p1 {
             font-size: 3rem;
             margin-top: 2.5rem;
             margin-bottom: 4rem;
-            margin-left: 1rem;
         }
 
-        .p2 {
-            font-size: 2rem;
-            margin-bottom: 6rem;
-            margin-left: 1rem;
-        }
-
-        .p3 {
-            font-size: 1.8rem;
-            margin-left: 1rem;
-            background-color: lightgray;
-            display: inline-block;
-        }
         /* ------------------------------------- */
 
         .caja2-container{
@@ -164,15 +155,56 @@
 /* ------------------------------------------------------ */
 
         .caja3 {
-            border: 1px solid black;
-            height: 50vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+            height: 40vh;
         }
 
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
         
+        .input-container {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            margin-left: 2.5rem;
+        }
+
+        .input1 {
+            margin-top: 3rem;
+        }
+
+        input {
+            height: 3rem;
+            margin-left: 1rem;
+        }
+
+        .fecha-input {
+            height: 5rem;
+            width: 14rem;;
+        }
+
+        .caja3-pagar {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagar-container {
+            background-color: lightgray;
+            display: inline-flex;
+            justify-content: center;
+            width: 25rem;
+        }
+
+        .pagar {
+            font-size: 5rem;
+            font-style: italic;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -214,10 +246,26 @@
     </div>
     </div>
     <div class="caja3">
-
-        <div class="cajagrande-ploma-1"> </div>
-        <div class="cajagrande-ploma-2"> </div>
-        <div class="cajagrande-ploma-3"> </div>
+        <form action="backend.com" class="formulario">
+                <div class="input-container input1">
+                <label for="nombres"> Fecha </label>
+                <input type="date" name="nombres" id="nombres" class="fecha-input">
+                </div>
+                <div class="input-container input2">
+                <label for="nombres"> Comida </label>
+                <input type="text" name="nombres" id="nombres" placeholder="Search for a dinner">
+                </div>
+                <div class="input-container input3">
+                <label for="nombres"> Cantidad </label>
+                <input type="text" name="nombres" id="nombres" placeholder="How many?">
+                </div>
+        </form>
+        
+        <div class="caja3-pagar">
+        <div class="pagar-container">
+        <p class="pagar"> PAGAR </p>
+        </div>
+        </div>
 
     </div>
     </div>
