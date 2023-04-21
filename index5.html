@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0; 
+            }
+
+        html{
+        font-size: 65.5%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }       
+
+        .container {
+            /* border: 1px solid black; */
+            height: 100vh;
+        }
+
+        .caja-header{
+            height: 5vh;
+            justify-content: end;
+            position: relative;
+        }
+
+        .menu{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            /* position: absolute; */
+        }
+
+        .menu p{ 
+            margin-left: 1rem;
+            background-color: lightgray;
+        }
+
+
+        .logo{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            position: absolute;
+            right: 16rem;
+        }
+
+        .logo p{ 
+            margin-left: 1rem;;
+        }
+
+
+        .loginycart{
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.8rem;
+            position: absolute;
+            right: 0;
+        }
+
+        .loginycart p{
+            margin-right: 1rem;
+            background-color: lightgray;
+        }
+        /* -------------------------------- */
+        
+        .caja1 {
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+        }
+
+        .p1 {
+            font-size: 3rem;
+            margin-top: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+     /* ------------------------------------------------- */
+
+        .caja2-container{
+            display: flex;
+            align-items: center;
+            justify-self: unset;
+            justify-content: center;
+        }
+
+        .caja2 {
+            height: 40vh;
+            width: 100%;
+            justify-content: center;
+            font-size: 2.8rem;
+            font-style: italic;
+            margin-left: 2rem;
+        }
+
+    
+
+/* ------------------------------------------------------ */
+
+        .caja3 {
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .caja3-pagar {
+            margin-bottom: 2rem;
+        }
+
+        .pagar-container {
+            background-color: lightgray;
+            display: inline-flex;
+            justify-content: center;
+            width: 33rem;
+            height: 5rem;
+        }
+
+        .pagar {
+            font-size: 4.5rem;
+            font-style: italic;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="caja-header">
+
+        <div class="menu">
+            <p> menu </p>
+        </div>
+
+        <div class="logo">
+            <p> logo </p>
+        </div>
+        
+        <div class="loginycart">
+            <p> login</p>
+            <p> cart</p>
+        </div>
+
+
+    </div>
+    <div class="caja1"> 
+        <p class="c1 p1"> Reservación </p>
+    </div>
+    <div class="caja2-container">
+    <div class="caja2">
+        <div > 
+            <p> Querido Usuario, tu </p>
+            <p> reservacion para la mesa 1</p>
+            <p> , el 23 de abril, ha sido</p>
+            <p> realizada </p>
+        </div>    
+    </div>
+    </div>
+    <div class="caja3">
+        <div class="caja3-pagar">
+        <div class="pagar-container">
+        <p class="pagar"> INICIO </p>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
