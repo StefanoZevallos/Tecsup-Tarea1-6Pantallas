@@ -72,19 +72,20 @@
         /* -------------------------------- */
         
         .caja1 {
-            height: 35vh;
+            height: 30vh;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             font-style: italic;
         }
 
         .p1 {
             font-size: 3rem;
-            margin-bottom: 7rem;
+            margin-top: 2.5rem;
+            margin-bottom: 4rem;
         }
 
-        /* ------------------------------------- */
+     /* ------------------------------------------------- */
 
         .caja2-container{
             display: flex;
@@ -95,91 +96,83 @@
 
         .caja2 {
             height: 40vh;
-            width: 330px;
-            display: grid;
-            grid-template-columns: 120px 120px;
-            gap: 45px;
-            row-gap: 20px;
+            width: 100%;
             justify-content: center;
-            font-size: 4rem;
+            font-size: 2.8rem;
+            font-style: italic;
+            margin-left: 2rem;
+        }
+
+    
+
+/* ------------------------------------------------------ */
+
+        .caja3 {
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .caja3-pagar {
+            margin-bottom: 2rem;
+        }
+
+        .pagar-container {
+            background-color: lightgray;
+            display: inline-flex;
+            justify-content: center;
+            width: 33rem;
+            height: 5rem;
+        }
+
+        .pagar {
+            font-size: 4.5rem;
             font-style: italic;
         }
 
-        .cl1 , .cl2 , .cl3 , .cl4{
-            margin-top: 20px;
-            width: 120px;
-            height: 120px;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            background-color: lightgray;
-        }
 
-        .cl1 p {
-            font-size: 4rem;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            padding-left: 1rem;
-        }
-        .cl2 p {
-            font-size: 4rem;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            padding-left: 1rem;
-        }
-        .cl3 p {
-            font-size: 4rem;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            padding-left: 1rem;
-        }
-        .cl4 p {
-            font-size: 4rem;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            padding-left: 1rem;
-        }
-
-/* ------------------------------------------------------ */
 
     </style>
 </head>
 <body>
     <div class="container">
     <div class="caja-header">
+
         <div class="menu">
             <p> menu </p>
         </div>
+
         <div class="logo">
             <p> logo </p>
         </div>
+        
         <div class="loginycart">
             <p> login</p>
             <p> cart</p>
         </div>
+
+
     </div>
     <div class="caja1"> 
-        <p class="c1 p1"> Metodo de pago</p>
+        <p class="c1 p1"> Reservación </p>
     </div>
     <div class="caja2-container">
     <div class="caja2">
-        <div class="cl1"> 
-            <p> Pago 1</p> 
-        </div>
-        <div class="cl2"> 
-            <p> Pago 2</p> 
-        </div>
-        <div class="cl3"> 
-            <p> Pago 3</p>  
-        </div>
-        <div class="cl4"> 
-            <p> Pago 4</p>  
+        <div > 
+            <p> Querido Usuario, tu </p>
+            <p> reservacion para la mesa 1</p>
+            <p> , el 23 de abril, ha sido</p>
+            <p> realizada </p>
         </div>    
     </div>
+    </div>
+    <div class="caja3">
+        <div class="caja3-pagar">
+        <div class="pagar-container">
+        <p class="pagar"> INICIO </p>
+        </div>
+        </div>
     </div>
     </div>
 </body>
